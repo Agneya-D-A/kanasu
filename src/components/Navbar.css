@@ -1,0 +1,26 @@
+.Navbar{
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #950A0A;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0%;
+}
+
+.Navbar *{
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar *:visited:active:link{
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar *:hover{
+    transform: scale(1.3);
+    color: #FEFEFE;
+}
