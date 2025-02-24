@@ -7,7 +7,7 @@ export default function Navbar(){
         <nav className="Navbar">
             <img src="src/assets/uandi.png" width='60vh' height='60vh'/>
             <Link to="/">Home</Link>
-            <Link to="/student-experience">Experiences</Link>
+            <Link to="/experiences">Experiences</Link>
             <a href="https://uandi.org.in/teach">About U&I</a>
         </nav>
     );

@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import VolunteerExperience from './pages/VolunteerExperience';
 import StudentExperience from './pages/StudentExperience';
 import Layout from './Layout';
-
+import Experience from './pages/Experience'
+import DefaultExperience from './pages/DefaultExperience';
 function App() {
   
 
@@ -16,8 +17,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<Home/>}/>
-            <Route path='volunteer-experience' element={<VolunteerExperience/>}/>
-            <Route path='student-experience' element={<StudentExperience/>}/>
+            <Route path='experiences' element={<Experience/>}>
+              <Route index element={<DefaultExperience/>}/>
+              <Route path='student' element={<StudentExperience/>}/>
+              <Route path='volunteer' element={<VolunteerExperience/>}/>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

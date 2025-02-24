@@ -9,11 +9,18 @@ const layoutStyle = {
     paddingTop: '0px'
 }
 
+const mainBodyStyle = {
+    marginTop: "5%"
+}
+
 export default function Layout(){
     return (
         <div style={{layoutStyle}}>
             <Navbar/>
-            <Outlet/>
+            <div className="mainBody" style={mainBodyStyle}>
+                <Outlet/>
+            </div>
+            
         </div>
     );
 }
